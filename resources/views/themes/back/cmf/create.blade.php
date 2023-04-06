@@ -219,7 +219,7 @@
                                     <br>
                                     @foreach($subdepartments as $subdepartment)
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="area_terkait[]" type="checkbox" id="{{$subdepartment->id}}" value="{{$subdepartment->id}}">
+                                            <input class="form-check-input" name="area_terkait[]" type="checkbox" id="{{$subdepartment->id}}" value="{{$subdepartment->id}}" required>
                                             <label class="form-check-label" for="{{$subdepartment->id}}">{{$subdepartment->txtNamaSubDept}}</label>
                                         </div>
                                     @endforeach
